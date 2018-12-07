@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Dec 06 14:53:38 EET 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0167-8394-ab6d-00000f508080 
+on database directory memory:E:\PluralSight\JavaSE\DesignPatternsStructural\codejava\webdb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@28c97a5 
+Loaded from file:/E:/PluralSight/JavaSE/DesignPatternsStructural/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=10.0.1+10
+user.dir=E:\PluralSight\JavaSE\DesignPatternsStructural
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
