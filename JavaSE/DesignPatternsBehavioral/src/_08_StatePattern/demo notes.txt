@@ -1,0 +1,64 @@
+package com.pluralsight._08_StatePattern;
+
+public class GarageDoor {
+
+	final static int CLOSED = 0;
+	final static int OPEN = 1;
+	
+	int _08_StatePattern = CLOSED;
+	
+	public GarageDoor() {
+		
+	}
+	
+	public void openDoor() {
+		if(_08_StatePattern == OPEN) {
+			System.out.println("Door is already open");
+		}
+		else if (_08_StatePattern == CLOSED) {
+			System.out.println("Opening door.");
+			_08_StatePattern = OPEN;
+		}
+		
+	}
+	
+	public void closeDoor() {
+		if(_08_StatePattern == OPEN) {
+			System.out.println("Closing door.");
+			_08_StatePattern = CLOSED;
+		}
+		else if (_08_StatePattern == CLOSED) {
+			System.out.println("Door is already closed.");
+		}
+	}
+	
+	public String toString() {
+		if(_08_StatePattern == OPEN) {
+			return "Door is open";
+		}
+		else {
+			return "Door is closed";
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////
+
+package com.pluralsight._08_StatePattern;
+
+public class StateDemo {
+
+	public static void main(String[] args) {
+		GarageDoor garageDoor = new GarageDoor();
+		
+		System.out.println(garageDoor);
+		
+		garageDoor.openDoor();
+		
+		System.out.println(garageDoor);
+		
+		garageDoor.closeDoor();
+		
+		System.out.println(garageDoor);
+	}
+}
